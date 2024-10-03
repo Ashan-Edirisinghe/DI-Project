@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum Eventworks</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style> 
+      .swiper {
+          width: 100%;
+          height: 100%;
+      }
+      .swiper-slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #fff; /* Optional: background color */
+      }
+      .swiper-slide img {
+          width: auto;
+          height: 100%;
+          object-fit: cover;
+      }
+  
+      </style>
+  
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const swiper = new Swiper('.swiper', {
+              loop: true, // Enable looping of slides
+              autoplay: {
+                  delay: 2500, // Delay between transitions in milliseconds
+                  disableOnInteraction: false, // Allow autoplay to continue even after interaction
+              },
+              pagination: {
+                  el: '.swiper-pagination', // Pagination element
+                  clickable: true, // Allow clicking on pagination bullets
+              },
+              navigation: {
+                  nextEl: '.swiper-button-next', // Next button
+                  prevEl: '.swiper-button-prev', // Previous button
+              },
+          });
+      });
+      </script>
+</head>
+<body>
+    <header class="bg-gray-800">
+        <nav class="flex justify-between items-center container px-12 h-16 lg:gap-10 mx-auto relative">
+            <a href="index.html" class="text-3xl font-bold border-2 border-gray-400 px-2 py-1 whitespace-nowrap text-yellow-500">Momentum</a>
+          
+            <div id="dropdown-menu" class="dropdown-menu absolute top-full left-0 max-lg:bg-gray-800 w-full flex-col gap-6 items-center py-2 text-lg font-bold lg:static lg:flex lg:flex-row lg:justify-between hidden">
+              <ul class="flex flex-col items-center gap-8 lg:flex-row lg:gap-10 text-gray-400">
+                
+                <li class="relative group">
+                  <a href="#" class="hover:text-yellow-500 font-bold">Services</a>
+                  <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                    <ul class="py-1">
+                      <li><a href="lighting.html" class="block px-4 py-2 hover:text-white">Lighting</a></li>
+                      <li><a href="audio.html" class="block px-4 py-2 hover:text-white">Audio</a></li>
+                      <li><a href="video.html" class="block px-4 py-2 hover:text-white">Video</a></li>
+                      <li><a href="fabrication.html" class="block px-4 py-2 hover:text-white">Fabrication</a></li>
+                      <li><a href="staging.html" class="block px-4 py-2 hover:text-white">Staging</a></li>
+                    </ul>
+                  </div>
+                </li>
+          
+                <li class="relative group">
+                    <a href="#" class="hover:text-yellow-500 font-bold">Work</a>
+                  <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                      <ul class="py-1">
+                        <li><a href="corporate.html" class="block px-4 py-2 hover:text-white">Corporate</a></li>
+                        <li><a href="entertainment.html" class="block px-4 py-2 hover:text-white">Entertainment</a></li>
+                        <li><a href="gallery.html" class="block px-4 py-2 hover:text-white">Gallery</a></li>
+                        <li><a href="caseStudies.html" class="block px-4 py-2 hover:text-white">Case Studies</a></li>
+                      </ul>
+                    </div>
+                </li>
+
+                <li class="hover:text-yellow-500"><a href="location.html">Location</a></li>
+                <li class="hover:text-yellow-500"><a href="blog.html">Blog</a></li>
+                <li class="hover:text-yellow-500"><a href="aboutUs.html">About Us</a></li>
+                <li class="hover:text-yellow-500"><a href="contact.html">Contact</a></li>
+              </ul>
+          
+              <div class="flex flex-col mt-3 gap-6 lg:flex-row lg:gap-8 w-fit mx-auto items-center">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-1 px-4 rounded-lg mb-1"><a href="login.html">Login</a></button>
+              </div>
+            </div>
+          
+
+            <div id="toggle-button" class="lg:hidden">
+              <i class="fa-solid fa-bars fa-lg text-gray-400"></i>
+            </div>
+          </nav>       
+    </header>
+
+<!-- Hero Section -->
+
+<section>
+    <div class="flex justify-center items-center h-52 bg-center bg-gray-800 px-6 mx-auto">
+        <div class="text-center">
+            <h1 class="text-xl md:text-5xl font-bold text-gray-50 border-b-4 border-yellow-500 max-w-md">
+                EVENT LIGHTING
+            </h1>
+        </div>
+    </div>
+</section>
+
+<!-- Content Section -->
+<div class="container mx-auto grid gap-5 py-8">
+    
+    <!-- Swiper Slider Section -->
+    <div class="relative swiper h-96">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/img/lighting01.jpg" alt="Lighting Image 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="/img/lighting03.jpg" alt="Lighting Image 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="/img/lighting05 (1).jpg" alt="Lighting Image 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="/img/lighting06.jpg" alt="Lighting Image 4">
+            </div>
+            <div class="swiper-slide">
+                <img src="/img/lighting07.jpg" alt="Lighting Image 5">
+            </div>
+        </div>
+
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Word Content Section -->
+    <div class="grid md:grid-cols-3 gap-4 text-wrap">
+        
+        <!-- Main Text Column -->
+        <div class="md:col-span-2 p-8 font-sans text-wrap">
+            <h1 class="md:text-4xl text-2xl font-bold mb-6  underline decoration-yellow-500 underline-offset-8">Setting the Right Mood</h1>
+            <p class="mb-4">Lighting is transformative by nature. In the right person’s hands, lighting for events can convert a drab lifeless area into a bright oasis of color and liveliness. Lighting is not only about illuminating a room or reflecting a desired mood but about creating the energy and pulse of an event much as music can do. This is the Oxygen Event Lighting Philosophy.</p>
+
+            <p class="mb-4">See how we transformed these <span class="text-yellow-400">corporate</span> and <span class="text-yellow-400">entertainment</span> events.</p>
+
+            <p class="mb-4">We use GLP, Martin Professional, and Chauvet Professional gear. GLP is a pioneer in LED intelligent light systems, while Martin Professional fixtures have dominated the industry for 20 years. Chauvet Professional lights are recognized for unmatched quality and value.</p>
+
+            <p class="mb-4">Our team will work with you to create the perfect lighting support structures, whether they are hung from architecture or supported on the ground. Safety and elegance are top priorities. Oxygen also offers custom gobos, providing a seamless way to highlight your brand.</p>
+
+            <h2 class="text-xl font-bold mb-4">Sampling of Techniques We Employ</h2>
+
+            <h3 class="font-bold mb-2">For Corporate Events:</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Wireless LED uplighting</li>
+                <li>Feature product lighting</li>
+                <li>Wireless table pinspotting</li>
+                <li>Vivid tones on walls</li>
+                <li>Textural relief lighting</li>
+                <li>Custom gobos</li>
+                <li>Light podiums and catwalks</li>
+            </ul>
+
+            <h3 class="font-bold mb-2">For Entertainment Events:</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Moving lights</li>
+                <li>Effect lighting (Strobes and blinders)</li>
+                <li>Giant discoballs</li>
+                <li>Lasers</li>
+                <li>Atmospheric effects (haze and low-lying fog)</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mb-4">Rental Service</h2>
+            <p class="mb-4">We provide video, audio, and event lighting rentals in New York City. Our reliable gear offers an economical solution. Technical consultants are available 24 hours a day. Please contact us for inquiries.</p>
+
+            <h3 class="text-xl font-bold mb-2">Pick-up/Drop-off:</h3>
+            <p class="mb-4">Visit our Oxygen shop in Long Island City, minutes from the 59th Street bridge. Appointments are required.</p>
+
+            <h3 class="text-xl font-bold mb-2">Delivery:</h3>
+            <p>Oxygen can deliver equipment directly to your venue.</p>
+        </div>
+
+        <!-- Quote Section -->
+        <div class="bg-white p-8 mt-12 border-t-4 border-yellow-500 rounded-lg shadow-lg">
+            <h1 class="font-bold text-xl text-center mb-4">QUOTE</h1>
+            <p class="text-lg text-center mb-4">Call Us:<br>(212) 255-2542</p>
+
+            <p class="text-lg text-center mb-4">
+                Email: 
+                <a href="mailto:info@oxygeneventworks.com" class="hover:underline">info@oxygeneventworks.com</a>
+            </p>
+
+            <div class="flex justify-center">
+                <a href="#quote-form" class="bg-yellow-300 hover:bg-yellow-500 text-lg font-medium text-black py-3 px-6 rounded-lg">
+                    Quote Request Form
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Services Column -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-bold uppercase text-yellow-500">Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="lighting.html" class="text-gray-400 hover:text-yellow-500">Lighting</a></li>
+                    <li><a href="audio.html" class="text-gray-400 hover:text-yellow-500">Audio</a></li>
+                    <li><a href="video.html" class="text-gray-400 hover:text-yellow-500">Video</a></li>
+                    <li><a href="fabrication.html" class="text-gray-400 hover:text-yellow-500">Fabrication</a></li>
+                    <li><a href="aboutUs.html" class="text-gray-400 hover:text-yellow-500">360 Integration</a></li>
+                    <li><a href="staging.html" class="text-gray-400 hover:text-yellow-500">Staging</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- More Info Column -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-bold uppercase text-yellow-500">More Info</h3>
+                <ul class="space-y-2">
+                    <li><a href="entertainment.html" class="text-gray-400 hover:text-yellow-500">Entertainment</a></li>
+                    <li><a href="corporate.html" class="text-gray-400 hover:text-yellow-500">Corporate</a></li>
+                    <li><a href="aboutUs.html" class="text-gray-400 hover:text-yellow-500">About</a></li>
+                    <li><a href="review.html" class="text-gray-400 hover:text-yellow-500">Reviews</a></li>
+                    <li><a href="blog.html" class="text-gray-400 hover:text-yellow-500">Blog</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-yellow-500">Contact</a></li>
+                    <li><a href="caseStudies.html" class="text-gray-400 hover:text-yellow-500">Case Studies</a></li>
+                </ul>
+            </div>
+
+            <!-- Connect & Social Media Column -->
+            <div class="space-y-6">
+                <!-- Connect Section -->
+                <div>
+                    <h3 class="text-lg font-bold uppercase text-yellow-500">Connect</h3>
+                    <p class="text-gray-400 mb-4">Stay in the loop. Be the first to learn about our latest events.</p>
+                    <form action="#" method="POST" class="flex space-x-2">
+                        <input type="text" placeholder="Enter email" class="flex-grow px-4 py-2 bg-gray-800 border border-gray-700 focus:border-yellow-500 text-gray-400">
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Social Media Section -->
+                <div>
+                    <h3 class="text-lg font-bold uppercase text-yellow-500">Social Media</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-x"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500">
+            <p>All Content © 2024 by Momentum Eventworks.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>

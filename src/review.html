@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum Eventworks</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .slide {
+            transition: transform 0.8s ease-in-out;
+        }
+
+        .slider-button {
+            background: none;
+            border: none;
+            color: #d69e1f;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .carousel-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-item {
+            flex: 0 0 100%; 
+            box-sizing: border-box;
+        }
+        @media (min-width: 768px) {
+            .carousel-item {
+                flex: 0 0 33.33%; 
+            }
+        }
+        .carousel-item-inner {
+            background-color: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .carousel-nav-left {
+            left: 10px;
+        }
+        .carousel-nav-right {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-gray-800">
+        <nav class="flex justify-between items-center container px-12 h-16 lg:gap-10 mx-auto relative">
+            <a href="index.html" class="text-3xl font-bold border-2 border-gray-400 px-2 py-1 whitespace-nowrap text-yellow-500">Momentum</a>
+          
+            <div id="dropdown-menu" class="dropdown-menu absolute top-full left-0 max-lg:bg-gray-800 w-full flex-col gap-6 items-center py-2 text-lg font-bold lg:static lg:flex lg:flex-row lg:justify-between hidden">
+              <ul class="flex flex-col items-center gap-8 lg:flex-row lg:gap-10 text-gray-400">
+                
+                <li class="relative group">
+                  <a href="#" class="hover:text-yellow-500 font-bold">Services</a>
+                  <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                    <ul class="py-1">
+                      <li><a href="lighting.html" class="block px-4 py-2 hover:text-white">Lighting</a></li>
+                      <li><a href="audio.html" class="block px-4 py-2 hover:text-white">Audio</a></li>
+                      <li><a href="video.html" class="block px-4 py-2 hover:text-white">Video</a></li>
+                      <li><a href="fabrication.html" class="block px-4 py-2 hover:text-white">Fabrication</a></li>
+                      <li><a href="staging.html" class="block px-4 py-2 hover:text-white">Staging</a></li>
+                    </ul>
+                  </div>
+                </li>
+          
+                <li class="relative group">
+                    <a href="#" class="hover:text-yellow-500 font-bold">Work</a>
+                  <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                      <ul class="py-1">
+                        <li><a href="corporate.html" class="block px-4 py-2 hover:text-white">Corporate</a></li>
+                        <li><a href="entertainment.html" class="block px-4 py-2 hover:text-white">Entertainment</a></li>
+                        <li><a href="gallery.html" class="block px-4 py-2 hover:text-white">Gallery</a></li>
+                        <li><a href="caseStudies.html" class="block px-4 py-2 hover:text-white">Case Studies</a></li>
+                      </ul>
+                    </div>
+                </li>
+
+                <li class="hover:text-yellow-500"><a href="location.html">Location</a></li>
+                <li class="hover:text-yellow-500"><a href="blog.html">Blog</a></li>
+                <li class="hover:text-yellow-500"><a href="aboutUs.html">About Us</a></li>
+                <li class="hover:text-yellow-500"><a href="contact.html">Contact</a></li>
+              </ul>
+          
+              <div class="flex flex-col mt-3 gap-6 lg:flex-row lg:gap-8 w-fit mx-auto items-center">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-1 px-4 rounded-lg mb-1"><a href="login.html">Login</a></button>
+              </div>
+            </div>
+          
+
+            <div id="toggle-button" class="lg:hidden">
+              <i class="fa-solid fa-bars fa-lg text-gray-400"></i>
+            </div>
+          </nav>       
+    </header>
+
+    <div class="container mx-auto p-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4">Rating Summary</h2>
+                <div class="space-y-2">
+                    <div class="flex items-center">
+                        <span class="text-xl font-bold">4.5</span>
+                        <div class="flex ml-2 text-yellow-500">
+                            <span>★★★★★</span>
+                        </div>
+                        <span class="ml-2 text-gray-600">(150 Reviews)</span>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="flex items-center">
+                            <div class="w-2/3 bg-yellow-500 h-2 rounded"></div>
+                            <span class="ml-2 text-gray-600">5 Stars (100)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/2 bg-yellow-500 h-2 rounded"></div>
+                            <span class="ml-2 text-gray-600">4 Stars (30)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/4 bg-yellow-500 h-2 rounded"></div>
+                            <span class="ml-2 text-gray-600">3 Stars (15)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/6 bg-yellow-500 h-2 rounded"></div>
+                            <span class="ml-2 text-gray-600">2 Stars (5)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/12 bg-yellow-500 h-2 rounded"></div>
+                            <span class="ml-2 text-gray-600">1 Star (2)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4">Submit Your Review</h2>
+                <form id="reviewForm" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-700 font-bold">Your Name:</label>
+                        <input type="text" id="name" name="name"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                            required>
+                    </div>
+                    <div>
+                        <label for="rating" class="block text-gray-700 font-bold">Your Rating:</label>
+                        <div id="ratingStars" class="flex cursor-pointer text-gray-300">
+                            <span data-value="1" class="star">★</span>
+                            <span data-value="2" class="star">★</span>
+                            <span data-value="3" class="star">★</span>
+                            <span data-value="4" class="star">★</span>
+                            <span data-value="5" class="star">★</span>
+                        </div>
+                        <input type="hidden" id="rating" name="rating" required>
+                    </div>
+                    <div>
+                        <label for="review" class="block text-gray-700 font-bold">Your Review:</label>
+                        <textarea id="review" name="review"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                            rows="4" required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-yellow-500 text-white py-2 rounded-lg font-bold hover:bg-yellow-600 transition duration-300">Submit
+                        Review</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg mt-8">
+            <h2 class="text-3xl font-bold text-gray-700 mb-4">Customer Reviews</h2>
+
+            <div class="carousel-container">
+                <div class="carousel-inner" id="carousel">
+
+                    <div class="carousel-item">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                            <img src="/img/001.jpg" alt="Profile Image" class="rounded-full w-16 h-16 mx-auto">
+                            <p class="font-bold mt-2">Alice Johnson</p>
+                            <div class="text-yellow-500 mt-1">★★★☆☆</div>
+                            <p class="text-gray-700 mt-2">Fantastic event management services! Our wedding was perfectly
+                                organized and smooth.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                            <img src="/img/002.jpg" alt="Profile Image" class="rounded-full w-16 h-16 mx-auto">
+                            <p class="font-bold mt-2">Baby Rider</p>
+                            <div class="text-yellow-500 mt-1">★★☆☆☆</div>
+                            <p class="text-gray-700 mt-2">I had a disappointing experience with this service. The event
+                                was poorly organized.
+                            <p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                            <img src="/img/003.png" alt="Profile Image" class="rounded-full w-16 h-16 mx-auto">
+                            <p class="font-bold mt-2">Mark Antony</p>
+                            <div class="text-yellow-500 mt-1">★★★★☆</div>
+                            <p class="text-gray-700 mt-2">The team was attentive and responsive to all our needs during
+                                the charity event.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                            <img src="/img/004.jpg" alt="Profile Image" class="rounded-full w-16 h-16 mx-auto">
+                            <p class="font-bold mt-2">Michael Brown</p>
+                            <div class="text-yellow-500 mt-1">★★★★★</div>
+                            <p class="text-gray-700 mt-2">Impressive planning for our business seminar. Managed with
+                                professionalism.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                            <img src="/img/005.jpg" alt="Profile Image" class="rounded-full w-16 h-16 mx-auto">
+                            <p class="font-bold mt-2">Sophia Wilson</p>
+                            <div class="text-yellow-500 mt-1">★★★★☆</div>
+                            <p class="text-gray-700 mt-2">Great experience! The team went above and beyond to make our
+                                party memorable.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                            <img src="/img/006.jpg" alt="Profile Image" class="rounded-full w-16 h-16 mx-auto">
+                            <p class="font-bold mt-2">James Taylor</p>
+                            <div class="text-yellow-500 mt-1">★★★★★</div>
+                            <p class="text-gray-700 mt-2">Absolutely fantastic service! The event was seamless, and the
+                                team handled everything with
+                                great professionalism</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                            <img src="/img/007.jpg" alt="Profile Image" class="rounded-full w-16 h-16 mx-auto">
+                            <p class="font-bold mt-2">Olivia Martinez</p>
+                            <div class="text-yellow-500 mt-1">★★★☆☆</div>
+                            <p class="text-gray-700 mt-2">The organizers were very helpful and accommodating. Highly
+                                recommend!</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button
+                    class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full"
+                    id="prevBtn">&#9664;</button>
+                <button
+                    class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full"
+                    id="nextBtn">&#9654;</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Services Column -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold uppercase text-yellow-500">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="lighting.html" class="text-gray-400 hover:text-yellow-500">Lighting</a></li>
+                        <li><a href="audio.html" class="text-gray-400 hover:text-yellow-500">Audio</a></li>
+                        <li><a href="video.html" class="text-gray-400 hover:text-yellow-500">Video</a></li>
+                        <li><a href="fabrication.html" class="text-gray-400 hover:text-yellow-500">Fabrication</a></li>
+                        <li><a href="aboutUs.html" class="text-gray-400 hover:text-yellow-500">360 Integration</a></li>
+                        <li><a href="staging.html" class="text-gray-400 hover:text-yellow-500">Staging</a></li>
+                        
+                    </ul>
+                </div>
+    
+                <!-- More Info Column -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold uppercase text-yellow-500">More Info</h3>
+                    <ul class="space-y-2">
+                        <li><a href="entertainment.html" class="text-gray-400 hover:text-yellow-500">Entertainment</a></li>
+                        <li><a href="corporate.html" class="text-gray-400 hover:text-yellow-500">Corporate</a></li>
+                        <li><a href="aboutUs.html" class="text-gray-400 hover:text-yellow-500">About</a></li>
+                        <li><a href="review.html" class="text-gray-400 hover:text-yellow-500">Reviews</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-yellow-500">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-yellow-500">Contact</a></li>
+                        <li><a href="caseStudies.html" class="text-gray-400 hover:text-yellow-500">Case Studies</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Connect & Social Media Column -->
+                <div class="space-y-6">
+                    <!-- Connect Section -->
+                    <div>
+                        <h3 class="text-lg font-bold uppercase text-yellow-500">Connect</h3>
+                        <p class="text-gray-400 mb-4">Stay in the loop. Be the first to learn about our latest events.</p>
+                        <form action="#" method="POST" class="flex space-x-2">
+                            <input type="text" placeholder="Enter email" class="flex-grow px-4 py-2 bg-gray-800 border border-gray-700 focus:border-yellow-500 text-gray-400">
+                            <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6">Submit</button>
+                        </form>
+                    </div>
+    
+                    <!-- Social Media Section -->
+                    <div>
+                        <h3 class="text-lg font-bold uppercase text-yellow-500">Social Media</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-x"></i></a>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500">
+                <p>All Content © 2024 by Momentum Eventworks.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>

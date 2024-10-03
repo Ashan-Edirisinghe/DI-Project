@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum Eventworks</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="bg-gray-800">
+    <nav class="flex justify-between items-center container px-12 h-16 lg:gap-10 mx-auto relative">
+        <a href="index.html" class="text-3xl font-bold border-2 border-gray-400 px-2 py-1 whitespace-nowrap text-yellow-500">Momentum</a>
+      
+        <div id="dropdown-menu" class="dropdown-menu absolute top-full left-0 max-lg:bg-gray-800 w-full flex-col gap-6 items-center py-2 text-lg font-bold lg:static lg:flex lg:flex-row lg:justify-between hidden">
+          <ul class="flex flex-col items-center gap-8 lg:flex-row lg:gap-10 text-gray-400">
+            
+            <li class="relative group">
+              <a href="#" class="hover:text-yellow-500 font-bold">Services</a>
+              <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                <ul class="py-1">
+                  <li><a href="lighting.html" class="block px-4 py-2 hover:text-white">Lighting</a></li>
+                  <li><a href="audio.html" class="block px-4 py-2 hover:text-white">Audio</a></li>
+                  <li><a href="video.html" class="block px-4 py-2 hover:text-white">Video</a></li>
+                  <li><a href="fabrication.html" class="block px-4 py-2 hover:text-white">Fabrication</a></li>
+                  <li><a href="staging.html" class="block px-4 py-2 hover:text-white">Staging</a></li>
+                </ul>
+              </div>
+            </li>
+      
+            <li class="relative group">
+                <a href="#" class="hover:text-yellow-500 font-bold">Work</a>
+              <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                  <ul class="py-1">
+                    <li><a href="corporate.html" class="block px-4 py-2 hover:text-white">Corporate</a></li>
+                    <li><a href="entertainment.html" class="block px-4 py-2 hover:text-white">Entertainment</a></li>
+                    <li><a href="gallery.html" class="block px-4 py-2 hover:text-white">Gallery</a></li>
+                    <li><a href="caseStudies.html" class="block px-4 py-2 hover:text-white">Case Studies</a></li>
+                  </ul>
+                </div>
+            </li>
+
+            <li class="hover:text-yellow-500"><a href="location.html">Location</a></li>
+            <li class="hover:text-yellow-500"><a href="blog.html">Blog</a></li>
+            <li class="hover:text-yellow-500"><a href="aboutUs.html">About Us</a></li>
+            <li class="hover:text-yellow-500"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      
+
+        <div id="toggle-button" class="lg:hidden">
+          <i class="fa-solid fa-bars fa-lg text-gray-400"></i>
+        </div>
+      </nav>       
+</header>
+    <section class="min-h-screen flex items-center justify-center bg-gray-100">
+        <div class="container mx-auto p-8 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-12">
+          
+          <!-- Image Section -->
+          <div class="w-full lg:w-6/12">
+            <img src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" class="w-full h-auto" alt="Login Illustration" />
+          </div>
+      
+          <!-- Form Section -->
+          <div class="w-full lg:w-5/12 bg-white p-8 rounded-lg shadow-lg">
+            <form>
+              <!-- Sign In With Social -->
+              <div class="flex items-center justify-center space-x-3">
+                <p class="text-lg">Sign in with</p>
+                <!-- Social Icons -->
+                <button class="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
+                  <!-- Facebook Icon -->
+                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                </button>
+                <button class="p-2 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition">
+                  <!-- X Icon -->
+                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48z"/></svg>
+                </button>
+                <button class="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">
+                  <!-- LinkedIn Icon -->
+                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                </button>
+              </div>
+      
+              <!-- Separator -->
+              <div class="my-4 flex items-center">
+                <div class="flex-1 border-t border-gray-300"></div>
+                <p class="px-4">Or</p>
+                <div class="flex-1 border-t border-gray-300"></div>
+              </div>
+      
+              <!-- Email Input -->
+              <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                <input id="email" type="email" placeholder="Enter your email" class="mt-1 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-500" />
+              </div>
+      
+              <!-- Password Input -->
+              <div class="mb-4">
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input id="password" type="password" placeholder="Enter your password" class="mt-1 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-500" />
+              </div>
+      
+              <!-- Remember Me and Forgot Password -->
+              <div class="flex items-center justify-between mb-4">
+                <label class="flex items-center space-x-2">
+                  <input type="checkbox" class="form-checkbox h-4 w-4 text-yellow-500" />
+                  <span>Remember me</span>
+                </label>
+                <a href="#" class="text-sm text-yellow-500 hover:underline">Forgot password?</a>
+              </div>
+      
+              <!-- Login Button -->
+              <button type="submit" class="w-full bg-yellow-500 text-white py-3 rounded-md hover:bg-yellow-600 transition">Login</button>
+      
+              <!-- Register Link -->
+              <p class="text-center text-sm mt-4">Don't have an account? <a href="#" class="text-yellow-500 hover:underline">Register</a></p>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+      <script src="main.js"></script>
+
+</body>
+</html>

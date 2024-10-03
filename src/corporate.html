@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum Eventworks</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="bg-gray-800">
+        <nav class="flex justify-between items-center container px-12 h-16 lg:gap-10 mx-auto relative">
+            <a href="index.html" class="text-3xl font-bold border-2 border-gray-400 px-2 py-1 whitespace-nowrap text-yellow-500">Momentum</a>
+          
+            <div id="dropdown-menu" class="dropdown-menu absolute top-full left-0 max-lg:bg-gray-800 w-full flex-col gap-6 items-center py-2 text-lg font-bold lg:static lg:flex lg:flex-row lg:justify-between hidden">
+              <ul class="flex flex-col items-center gap-8 lg:flex-row lg:gap-10 text-gray-400">
+                
+                <li class="relative group">
+                  <a href="#" class="hover:text-yellow-500 font-bold">Services</a>
+                  <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                    <ul class="py-1">
+                      <li><a href="lighting.html" class="block px-4 py-2 hover:text-white">Lighting</a></li>
+                      <li><a href="audio.html" class="block px-4 py-2 hover:text-white">Audio</a></li>
+                      <li><a href="video.html" class="block px-4 py-2 hover:text-white">Video</a></li>
+                      <li><a href="fabrication.html" class="block px-4 py-2 hover:text-white">Fabrication</a></li>
+                      <li><a href="staging.html" class="block px-4 py-2 hover:text-white">Staging</a></li>
+                    </ul>
+                  </div>
+                </li>
+          
+                <li class="relative group">
+                    <a href="#" class="hover:text-yellow-500 font-bold">Work</a>
+                  <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                      <ul class="py-1">
+                        <li><a href="corporate.html" class="block px-4 py-2 hover:text-white">Corporate</a></li>
+                        <li><a href="entertainment.html" class="block px-4 py-2 hover:text-white">Entertainment</a></li>
+                        <li><a href="gallery.html" class="block px-4 py-2 hover:text-white">Gallery</a></li>
+                        <li><a href="caseStudies.html" class="block px-4 py-2 hover:text-white">Case Studies</a></li>
+                      </ul>
+                    </div>
+                </li>
+
+                <li class="hover:text-yellow-500"><a href="location.html">Location</a></li>
+                <li class="hover:text-yellow-500"><a href="blog.html">Blog</a></li>
+                <li class="hover:text-yellow-500"><a href="aboutUs.html">About Us</a></li>
+                <li class="hover:text-yellow-500"><a href="contact.html">Contact</a></li>
+              </ul>
+          
+              <div class="flex flex-col mt-3 gap-6 lg:flex-row lg:gap-8 w-fit mx-auto items-center">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-1 px-4 rounded-lg mb-1"><a href="login.html">Login</a></button>
+              </div>
+            </div>
+          
+
+            <div id="toggle-button" class="lg:hidden">
+              <i class="fa-solid fa-bars fa-lg text-gray-400"></i>
+            </div>
+          </nav>       
+    </header>
+
+    <div class="bg-gray-800 py-8">
+      <!-- Main Section -->
+      <section class="text-center mb-8 text-white lg:px-16">
+          <h1 class="text-5xl font-bold underline decoration-yellow-500 underline-offset-8 mb-4">Corporate Event</h1>
+          <p class="text-lg mx-auto leading-relaxed max-w-2xl">
+              For our corporate events, we know how important it is to not only have a technically flawless event but one 
+              that will wow your audience. Experiential marketing firms, event management companies, event planners, 
+              and in-house event teams have come to rely on Momentum to create stress-free, sensational events with a meticulous eye for detail.
+          </p>
+      </section>
+  
+      <!-- Swiper Container -->
+      <section class="relative mb-12">
+          <div class="swiper h-96">
+              <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                      <img src="/img/1.jpg" alt="Image 1" class="w-full h-full object-cover">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="/img/2.jpg" alt="Image 2" class="w-full h-full object-cover">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="/img/3.jpg" alt="Image 3" class="w-full h-full object-cover">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="/img/4.jpg" alt="Image 4" class="w-full h-full object-cover">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="/img/5.jpg" alt="Image 5" class="w-full h-full object-cover">
+                  </div>
+              </div>
+  
+              <!-- Swiper Pagination -->
+              <div class="swiper-pagination"></div>
+  
+              <!-- Swiper Navigation -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+      </section>
+  
+      <!-- Wow Factor Section -->
+      <section class="bg-gray-200 py-12">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 class="text-4xl font-bold text-black mb-6 underline decoration-yellow-500 underline-offset-8">“Wow Factor” Through Technology</h2>
+              <p class="text-lg text-black mb-6">
+                  At Momentum, we understand that creating the “wow factor” at an event often relies on cutting-edge technology. 
+                  That’s why we continuously strive for technical innovation, offering clients tools to make their event stand out.
+              </p>
+              <h3 class="text-2xl font-bold text-black mb-4 underline decoration-yellow-500 underline-offset-8">Case Studies</h3>
+              <p class="text-black mb-4">
+                  The Momentum approach is collaborative and flexible. Our technical team listens to your ideas and considers any 
+                  restrictions (budget or infrastructure). We present options within your price range, offering walk-throughs, 2D/3D schematics, 
+                  run of show, and more. From start to finish, we ensure flawless execution.
+              </p>
+              <p class="text-black mb-4">
+                  We handle all aspects of sound, lighting, video, and power generation, so event teams can focus on other details.
+              </p>
+              <p class="text-black mb-6">
+                  With <span class="font-semibold">360 Integration</span> at a world-class level, we elevate events beyond client expectations, 
+                  ensuring that all technical elements work in seamless cohesion.
+              </p>
+  
+              <!-- Events List -->
+              <h3 class="text-2xl font-semibold text-black mb-4 underline decoration-yellow-500 underline-offset-8">Experience in a Variety of Events</h3>
+              <ul class="list-disc list-inside text-black space-y-2">
+                  <li>Product launch events (footwear, apparel, technology, automotive, etc.)</li>
+                  <li>Brand Activations</li>
+                  <li>Fashion shows and fashion after-parties</li>
+                  <li>Newfronts</li>
+                  <li>Upfronts</li>
+                  <li>Speeches</li>
+                  <li>Album release parties</li>
+                  <li>Music performances & speeches</li>
+                  <li>Charity Galas</li>
+                  <li>Industrials</li>
+                  <li>Wine festivals</li>
+                  <li>Art installations/shows</li>
+                  <li>Movie premieres</li>
+                  <li>Holiday parties</li>
+                  <li>Pop-up shops</li>
+                  <li>Store opening events</li>
+                  <li>Convention production</li>
+              </ul>
+          </div>
+      </section>
+  
+      <!-- Venues List Section -->
+      <section class="bg-gray-200 py-12">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h3 class="text-2xl font-semibold text-black mb-6 underline decoration-yellow-500 underline-offset-8">Experience in a Variety of Venues</h3>
+              <ul class="list-disc list-inside text-black space-y-2">
+                  <li>Top of Empire State Building</li>
+                  <li>620 Loft & Garden (Rockefeller Center)</li>
+                  <li>Lincoln Center</li>
+                  <li>Lexington Avenue Armory</li>
+                  <li>Park Avenue Armory</li>
+                  <li>Raw loft spaces</li>
+                  <li>Corporate offices</li>
+                  <li>National parks</li>
+                  <li>Convention centers</li>
+                  <li>Hotel ballrooms & rooftops</li>
+                  <li>Restaurants, bars, & nightclubs</li>
+                  <li>Empty warehouses</li>
+                  <li>Old abandoned cathedrals</li>
+              </ul>
+          </div>
+      </section>
+  </div>
+  
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const swiper = new Swiper('.swiper', {
+              loop: true,
+              autoplay: {
+                  delay: 2500,
+                  disableOnInteraction: false,
+              },
+              pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+              },
+              navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+              },
+          });
+      });
+  </script>
+  
+  
+
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Services Column -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-bold uppercase text-yellow-500">Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="lighting.html" class="text-gray-400 hover:text-yellow-500">Lighting</a></li>
+                    <li><a href="audio.html" class="text-gray-400 hover:text-yellow-500">Audio</a></li>
+                    <li><a href="video.html" class="text-gray-400 hover:text-yellow-500">Video</a></li>
+                    <li><a href="fabrication.html" class="text-gray-400 hover:text-yellow-500">Fabrication</a></li>
+                    <li><a href="aboutUs.html" class="text-gray-400 hover:text-yellow-500">360 Integration</a></li>
+                    <li><a href="staging.html" class="text-gray-400 hover:text-yellow-500">Staging</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- More Info Column -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-bold uppercase text-yellow-500">More Info</h3>
+                <ul class="space-y-2">
+                    <li><a href="entertainment.html" class="text-gray-400 hover:text-yellow-500">Entertainment</a></li>
+                    <li><a href="corporate.html" class="text-gray-400 hover:text-yellow-500">Corporate</a></li>
+                    <li><a href="aboutUs.html" class="text-gray-400 hover:text-yellow-500">About</a></li>
+                    <li><a href="review.html" class="text-gray-400 hover:text-yellow-500">Reviews</a></li>
+                    <li><a href="blog.html" class="text-gray-400 hover:text-yellow-500">Blog</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-yellow-500">Contact</a></li>
+                    <li><a href="caseStudies.html" class="text-gray-400 hover:text-yellow-500">Case Studies</a></li>
+                </ul>
+            </div>
+
+            <!-- Connect & Social Media Column -->
+            <div class="space-y-6">
+                <!-- Connect Section -->
+                <div>
+                    <h3 class="text-lg font-bold uppercase text-yellow-500">Connect</h3>
+                    <p class="text-gray-400 mb-4">Stay in the loop. Be the first to learn about our latest events.</p>
+                    <form action="#" method="POST" class="flex space-x-2">
+                        <input type="text" placeholder="Enter email" class="flex-grow px-4 py-2 bg-gray-800 border border-gray-700 focus:border-yellow-500 text-gray-400">
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Social Media Section -->
+                <div>
+                    <h3 class="text-lg font-bold uppercase text-yellow-500">Social Media</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-x"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500">
+            <p>All Content © 2024 by Momentum Eventworks.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>

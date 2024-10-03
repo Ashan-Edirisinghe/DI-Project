@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Organizing Company</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+    <body>
+        <header class="bg-gray-800">
+            <nav class="flex justify-between items-center container px-12 h-16 lg:gap-10 mx-auto relative">
+                <a href="index.html" class="text-3xl font-bold border-2 border-gray-400 px-2 py-1 whitespace-nowrap text-yellow-500">Momentum</a>
+              
+                <div id="dropdown-menu" class="dropdown-menu absolute top-full left-0 max-lg:bg-gray-800 w-full flex-col gap-6 items-center py-2 text-lg font-bold lg:static lg:flex lg:flex-row lg:justify-between hidden">
+                  <ul class="flex flex-col items-center gap-8 lg:flex-row lg:gap-10 text-gray-400">
+                    
+                    <li class="relative group">
+                      <a href="#" class="hover:text-yellow-500 font-bold">Services</a>
+                      <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                        <ul class="py-1">
+                          <li><a href="lighting.html" class="block px-4 py-2 hover:text-white">Lighting</a></li>
+                          <li><a href="audio.html" class="block px-4 py-2 hover:text-white">Audio</a></li>
+                          <li><a href="video.html" class="block px-4 py-2 hover:text-white">Video</a></li>
+                          <li><a href="fabrication.html" class="block px-4 py-2 hover:text-white">Fabrication</a></li>
+                          <li><a href="staging.html" class="block px-4 py-2 hover:text-white">Staging</a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                    <li class="relative group">
+                        <a href="#" class="hover:text-yellow-500 font-bold">Work</a>
+                      <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                          <ul class="py-1">
+                            <li><a href="corporate.html" class="block px-4 py-2 hover:text-white">Corporate</a></li>
+                            <li><a href="entertainment.html" class="block px-4 py-2 hover:text-white">Entertainment</a></li>
+                            <li><a href="gallery.html" class="block px-4 py-2 hover:text-white">Gallery</a></li>
+                            <li><a href="caseStudies.html" class="block px-4 py-2 hover:text-white">Case Studies</a></li>
+                          </ul>
+                        </div>
+                    </li>
+    
+                    <li class="hover:text-yellow-500"><a href="location.html">Location</a></li>
+                    <li class="hover:text-yellow-500"><a href="blog.html">Blog</a></li>
+                    <li class="hover:text-yellow-500"><a href="aboutUs.html">About Us</a></li>
+                    <li class="hover:text-yellow-500"><a href="contact.html">Contact</a></li>
+                  </ul>
+              
+                  <div class="flex flex-col mt-3 gap-6 lg:flex-row lg:gap-8 w-fit mx-auto items-center">
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-1 px-4 rounded-lg mb-1"><a href="login.html">Login</a></button>
+                  </div>
+                </div>
+              
+    
+                <div id="toggle-button" class="lg:hidden">
+                  <i class="fa-solid fa-bars fa-lg text-gray-400"></i>
+                </div>
+              </nav>       
+        </header>
+    
+        <script>
+            const toggleBtn = document.querySelector(".toggle-button");
+            const dropdown = document.querySelector(".dropdown-menu");
+    
+            toggleBtn.addEventListener("click", () => {
+                dropdown.classList.toggle('top-16');
+            })
+        </script>
+    
+    <section class="flex items-center justify-center h-[200px] bg-gray-800">
+        <div class="text-center">
+            <h1 class="mb-4 text-5xl font-bold text-white">GET IN TOUCH</h1>
+            <hr class="w-24.5 mx-auto mb-8 border-t-4 border-yellow-500">
+        </div>
+    </section>
+    
+    
+
+
+        <div class="container px-4 py-12 mx-auto">
+            <div class="grid gap-8 md:grid-cols-2">
+    
+                <div>
+                    <h2 class="mb-6 text-2xl font-bold">Contact Us</h2>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold">MOMENTUM EVENT ORGANIZING COMPANY,KANDY</h3>
+                        <p>No : 241/A,main street ,<br>Kandy</p>
+                        <p class="text-yellow-500">Telephone: 011-2233445</p>
+                        <p class="text-yellow-500">Email: <a href="mailto:info@momentumeventworks.com" class="underline">info@momentumeventworks.com</a></p>
+                    </div>
+    
+                    <div>
+                        <h3 class="text-lg font-semibold">MOMENTUM EVENT ORGANIZING COMPANY,COLOMBO</h3>
+                        <p> No:34 , Galle Road ,<br>Colombo 03 </p>
+                        <p class="text-yellow-500">Telephone: 011-7766554</p>
+                        <p class="text-yellow-500">Email: <a href="mailto:info@momentumeventworks.com" class="underline">info@momentumeventworks.com</a></p>
+                    </div>
+
+                    <div class="mt-12">
+                        <h2 class="mb-4 text-2xl font-bold">Jobs</h2>
+                        <p class="font-semibold">We’re hiring!</p>
+                        <p>Technical Director - Full Time</p>
+                        <p class="mt-4">At Momentum Event Works, we are always on the lookout for honest, creative, and energetic individuals to join our team.If you're passionate about the lighting, staging, or video production industries, we’d love to hear from you!<br><br>For any questions or additional inquiries, feel free to contact us via email or visit our website.</p>
+                        <p>For job inquiries, please email: <a href="mailto:jobs@momentumeventworks.com" class="text-yellow-500 underline">jobs@momentumeventworks.com</a></p>
+                    </div>
+                </div>
+    
+                <div>
+                    <h2 class="mb-6 text-2xl font-bold">Request a Quote</h2>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium" for="name">Contact Info</label>
+                            <input type="text" id="name" name="name" placeholder="Name" class="block w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500">
+                        </div>
+    
+                        <div>
+                            <input type="email" id="email" name="email" placeholder="Email" class="block w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500">
+                        </div>
+    
+                        <div>
+                            <label class="block text-sm font-medium" for="help">What can we help you with?</label>
+                            <select id="help" name="help" class="block w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500">
+                                <option value="Lighting">Lighting</option>
+                                <option value="Staging">Staging</option>
+                                <option value="Video">Video</option>
+                                <option value="Design">Design</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+    
+                        <div>
+                            <label class="block text-sm font-medium" for="event-type">What type of event?</label>
+                            <select id="event-type" name="event-type" class="block w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500">
+                                <option value="Corporate">Corporate</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Festival">Festival</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+    
+                        <div>
+                            <label class="block text-sm font-medium" for="city">City</label>
+                            <input type="text" id="city" name="city" placeholder="City" class="block w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500">
+                        </div>
+    
+                        <div>
+                            <label class="block text-sm font-medium" for="event-date">When is your event?</label>
+                            <input type="date" id="event-date" name="event-date" class="block w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500">
+                        </div>
+    
+                        <div>
+                            <label class="block text-sm font-medium" for="message">Additional Details</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us more about your event..." class="block w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500"></textarea>
+                        </div>
+    
+                        <div>
+                            <button type="submit" class="w-full px-4 py-2 font-bold text-black bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-gray-800 text-white py-10">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Services Column -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold uppercase text-yellow-500">Services</h3>
+                        <ul class="space-y-2">
+                            <li><a href="lighting.html" class="text-gray-400 hover:text-yellow-500">Lighting</a></li>
+                            <li><a href="audio.html" class="text-gray-400 hover:text-yellow-500">Audio</a></li>
+                            <li><a href="video.html" class="text-gray-400 hover:text-yellow-500">Video</a></li>
+                            <li><a href="fabrication.html" class="text-gray-400 hover:text-yellow-500">Fabrication</a></li>
+                            <li><a href="aboutUs.html" class="text-gray-400 hover:text-yellow-500">360 Integration</a></li>
+                            <li><a href="staging.html" class="text-gray-400 hover:text-yellow-500">Staging</a></li>
+                            
+                        </ul>
+                    </div>
+        
+                    <!-- More Info Column -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold uppercase text-yellow-500">More Info</h3>
+                        <ul class="space-y-2">
+                            <li><a href="entertainment.html" class="text-gray-400 hover:text-yellow-500">Entertainment</a></li>
+                            <li><a href="corporate.html" class="text-gray-400 hover:text-yellow-500">Corporate</a></li>
+                            <li><a href="aboutUs.html" class="text-gray-400 hover:text-yellow-500">About</a></li>
+                            <li><a href="review.html" class="text-gray-400 hover:text-yellow-500">Reviews</a></li>
+                            <li><a href="blog.html" class="text-gray-400 hover:text-yellow-500">Blog</a></li>
+                            <li><a href="contact.html" class="text-gray-400 hover:text-yellow-500">Contact</a></li>
+                            <li><a href="caseStudies.html" class="text-gray-400 hover:text-yellow-500">Case Studies</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Connect & Social Media Column -->
+                    <div class="space-y-6">
+                        <!-- Connect Section -->
+                        <div>
+                            <h3 class="text-lg font-bold uppercase text-yellow-500">Connect</h3>
+                            <p class="text-gray-400 mb-4">Stay in the loop. Be the first to learn about our latest events.</p>
+                            <form action="#" method="POST" class="flex space-x-2">
+                                <input type="text" placeholder="Enter email" class="flex-grow px-4 py-2 bg-gray-800 border border-gray-700 focus:border-yellow-500 text-gray-400">
+                                <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6">Submit</button>
+                            </form>
+                        </div>
+        
+                        <!-- Social Media Section -->
+                        <div>
+                            <h3 class="text-lg font-bold uppercase text-yellow-500">Social Media</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-x"></i></a>
+                                <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Footer Bottom -->
+                <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500">
+                    <p>All Content © 2024 by Momentum Eventworks.</p>
+                </div>
+            </div>
+        </footer>
+        
+        
+        <script src="main.js"></script>
+        
+    </body>
+    </html>
+
+    
+    

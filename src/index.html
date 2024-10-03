@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum Eventworks</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="bg-gray-800">
+        <nav class="flex justify-between items-center container px-12 h-16 lg:gap-10 mx-auto relative">
+            <a href="index.html" class="text-3xl font-bold border-2 border-gray-400 px-2 py-1 whitespace-nowrap text-yellow-500">Momentum</a>
+          
+            <div id="dropdown-menu" class="dropdown-menu absolute top-full left-0 max-lg:bg-gray-800 w-full flex-col gap-6 items-center py-2 text-lg font-bold lg:static lg:flex lg:flex-row lg:justify-between hidden">
+              <ul class="flex flex-col items-center gap-8 lg:flex-row lg:gap-10 text-gray-400">
+                
+                <li class="relative group">
+                  <a href="#" class="hover:text-yellow-500 font-bold">Services</a>
+                  <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                    <ul class="py-1">
+                      <li><a href="lighting.html" class="block px-4 py-2 hover:text-white">Lighting</a></li>
+                      <li><a href="audio.html" class="block px-4 py-2 hover:text-white">Audio</a></li>
+                      <li><a href="video.html" class="block px-4 py-2 hover:text-white">Video</a></li>
+                      <li><a href="fabrication.html" class="block px-4 py-2 hover:text-white">Fabrication</a></li>
+                      <li><a href="staging.html" class="block px-4 py-2 hover:text-white">Staging</a></li>
+                    </ul>
+                  </div>
+                </li>
+          
+                <li class="relative group">
+                    <a href="#" class="hover:text-yellow-500 font-bold">Work</a>
+                  <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                      <ul class="py-1">
+                        <li><a href="corporate.html" class="block px-4 py-2 hover:text-white">Corporate</a></li>
+                        <li><a href="entertainment.html" class="block px-4 py-2 hover:text-white">Entertainment</a></li>
+                        <li><a href="gallery.html" class="block px-4 py-2 hover:text-white">Gallery</a></li>
+                        <li><a href="caseStudies.html" class="block px-4 py-2 hover:text-white">Case Studies</a></li>
+                      </ul>
+                    </div>
+                </li>
+
+                <li class="hover:text-yellow-500"><a href="location.html">Location</a></li>
+                <li class="hover:text-yellow-500"><a href="blog.html">Blog</a></li>
+                <li class="hover:text-yellow-500"><a href="aboutUs.html">About Us</a></li>
+                <li class="hover:text-yellow-500"><a href="contact.html">Contact</a></li>
+              </ul>
+          
+              <div class="flex flex-col mt-3 gap-6 lg:flex-row lg:gap-8 w-fit mx-auto items-center">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-1 px-4 rounded-lg mb-1"><a href="login.html">Login</a></button>
+              </div>
+            </div>
+          
+
+            <div id="toggle-button" class="lg:hidden">
+              <i class="fa-solid fa-bars fa-lg text-gray-400"></i>
+            </div>
+          </nav>       
+    </header>
+
+    <!-- Hero Section -->
+     <section class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url(/img/dj-1.jpg);">
+        <div class="text-center bg-black bg-opacity-50 p-6 rounded-lg shadow-lg">
+            <h1 class="text-white text-5xl font-bold mb-4">MOMENTUM</h1>
+            <p class="text-yellow-300 text-xl mb-8">We are committed to helping you organize your next event. </p>
+        </div>
+     </section>
+
+     <!-- About Section -->
+        <section class="bg-cover bg-center py-12 flex items-center justify-center" style="background-image: url(/img/bulp.jpg)">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto lg:p-8">
+                <div class="container mx-auto px-4 text-left bg-black bg-opacity-70 p-6 shadow-lg max-lg:w-screen">
+                    <h2 class="text-2xl text-white font-bold">TRANSFORMING EVENTS: FROM LIGHTING & AV TO CUSTOM FABRICATION</h2>
+                    <p class="mt-4 text-white text-lg">We handle all of your production needs, including lighting, sound, video, and fabrication for events of all sizes. We offer over 20 years of craftsmanship to create stress-free, unforgettable experiences.</p>
+                    <button class="mt-6 bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-1"><a href="aboutUs.html">Learn More</a></button>
+                </div>
+            </div>
+        </section>
+
+            <!-- Events Section -->
+    <section class="py-12 bg-gray-800">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 container mx-auto px-4">
+            <div class="bg-cover bg-center p-4 shadow-lg rounded-lg text-center text-white flex justify-center items-center h-96" style="background-image: url('/img/corporate.jpg');">
+                <div class="bg-black bg-opacity-50 py-2 px-2 rounded-lg">
+                    <h3 class="transistion ease-in-out duration-1000 text-3xl font-semibold mb-4 border-2 border-yellow-500 hover:scale-110 hover:text-black hover:bg-yellow-500 py-2 px-4 mx-auto"><a href="corporate.html">Corporate Event</a></h3>
+                    <p>Executing your vision with a meticulous eye for detail.</p>
+                </div>
+            </div>
+            <div class="bg-cover bg-center p-4 shadow-lg rounded-lg text-center text-white flex justify-center items-center h-96" style="background-image: url('/img/concert-1.jpg');">
+                <div class="bg-black bg-opacity-50 py-2 px-2 rounded-lg">
+                    <h3 class="transition ease-in-out duration-1000 text-3xl font-semibold mb-4 border-2 border-yellow-500 hover:scale-110 hover:text-black hover:bg-yellow-500 py-2 px-4 mx-auto"><a href="entertainment.html">Entertainment Event</a></h3>
+                    <p class="">Making your event sensational and unforgettable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- Services Section -->
+     <section class="py-12 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 underline decoration-yellow-500 underline-offset-8">Our Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white text-black p-6 shadow-lg grid place-items-center">
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-1 text-xl font-semibold mb-4 transition-all hover:scale-110 duration-1000"><a href="lighting.html">Lighting</a></button>
+                    <img src="/img/lighting.svg" class="h-16 mx-auto p-2">
+                    <p>From elegant ballroom lighting to a full concert/electronic dance party light show, Momentum uses sleek, state of the art, energy-efficient lighting gear with effects that go from subtle to spectacular.</p>
+                </div>
+                <div class="bg-white text-black p-6 shadow-lg grid place-items-center">
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-1 text-xl font-semibold mb-4 transition-all hover:scale-110 duration-1000"><a href="audio.html">Audio</a></button>
+                    <img src="/img/audio.svg" class="h-16 mx-auto p-2">
+                    <p>Momentum uses only the best full-concert D&B Audiotechnik system with the most experienced technicians. A full range of microphones, consoles, band and DJ equipment plus monitors are also available.</p>
+                </div>
+                <div class="bg-white text-black p-6 shadow-lg grid place-items-center">
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-1 text-xl font-semibold mb-4 transition-all hover:scale-110 duration-1000"><a href="video.html">Video</a></button>
+                    <img src="/img/video.svg" class="h-16 mx-auto p-2">
+                    <p>Bringing your events to life with cutting edge multi-media technology like 3-D video mapping using high-definition projectors, HD video walls and LED flatscreens amongst others.</p>
+                </div>
+                <div class="bg-white text-black p-6 shadow-lg grid place-items-center">
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-1 text-xl font-semibold mb-4 transition-all hover:scale-110 duration-1000"><a href="fabrication.html">Fabrication</a></button>
+                    <img src="/img/bolts.svg" class="h-16 mx-auto p-2">
+                    <p>Creating bespoke solutions for projects of any scale, constructing personalized elements like logos and graphics for events and businesses covering everything from signage and lighting to art installations and step and repeats. Specializing in Laser Cutting/Engraving & CNC Routing.</p>
+                </div>
+                <div class="bg-white text-black p-6 shadow-lg grid place-items-center">
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-1 text-xl font-semibold mb-4 transition-all hover:scale-110 duration-1000"><a href="aboutUs.html"><span class="text-sm">360</span> Integration</a></button>
+                    <img src="/img/360.png" class="h-16 mx-auto p-2">
+                    <p>The seamless coordination and management of all technical, creative, and logistical elements for your event. From lighting, sound, video, staging, and even digital elements is aligned to deliver a cohesive and unforgettable experience.</p>
+                </div>
+                <div class="bg-white text-black p-6 shadow-lg grid place-items-center">
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-1 text-xl font-semibold mb-4 transition-all hover:scale-110 duration-1000"><a href="staging.html">Staging</a></button>
+                    <img src="/img/stage.png" class="h-16 mx-auto p-2">
+                    <p>Momentum can create new, self-contained temporary structures. Motorized truss systems, self-climbing roof systems, modular staging, catwalks, podiums, etc. We also provide event power distribution and generation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Services Column -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold uppercase text-yellow-500">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="lighting.html" class="text-gray-400 hover:text-yellow-500">Lighting</a></li>
+                        <li><a href="audio.html" class="text-gray-400 hover:text-yellow-500">Audio</a></li>
+                        <li><a href="video.html" class="text-gray-400 hover:text-yellow-500">Video</a></li>
+                        <li><a href="fabrication.html" class="text-gray-400 hover:text-yellow-500">Fabrication</a></li>
+                        <li><a href="aboutUs.html" class="text-gray-400 hover:text-yellow-500">360 Integration</a></li>
+                        <li><a href="staging.html" class="text-gray-400 hover:text-yellow-500">Staging</a></li>
+                        
+                    </ul>
+                </div>
+    
+                <!-- More Info Column -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold uppercase text-yellow-500">More Info</h3>
+                    <ul class="space-y-2">
+                        <li><a href="entertainment.html" class="text-gray-400 hover:text-yellow-500">Entertainment</a></li>
+                        <li><a href="corporate.html" class="text-gray-400 hover:text-yellow-500">Corporate</a></li>
+                        <li><a href="aboutUs.html" class="text-gray-400 hover:text-yellow-500">About</a></li>
+                        <li><a href="review.html" class="text-gray-400 hover:text-yellow-500">Reviews</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-yellow-500">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-yellow-500">Contact</a></li>
+                        <li><a href="cas.html" class="text-gray-400 hover:text-yellow-500">Case Studies</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Connect & Social Media Column -->
+                <div class="space-y-6">
+                    <!-- Connect Section -->
+                    <div>
+                        <h3 class="text-lg font-bold uppercase text-yellow-500">Connect</h3>
+                        <p class="text-gray-400 mb-4">Stay in the loop. Be the first to learn about our latest events.</p>
+                        <form action="#" method="POST" class="flex space-x-2">
+                            <input type="text" placeholder="Enter email" class="flex-grow px-4 py-2 bg-gray-800 border border-gray-700 focus:border-yellow-500 text-gray-400">
+                            <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6">Submit</button>
+                        </form>
+                    </div>
+    
+                    <!-- Social Media Section -->
+                    <div>
+                        <h3 class="text-lg font-bold uppercase text-yellow-500">Social Media</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-x"></i></a>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500">
+                <p>All Content © 2024 by Momentum Eventworks.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>

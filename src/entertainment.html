@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum Eventworks</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="bg-gray-800">
+        <nav class="flex justify-between items-center container px-12 h-16 lg:gap-10 mx-auto relative">
+            <a href="index.html" class="text-3xl font-bold border-2 border-gray-400 px-2 py-1 whitespace-nowrap text-yellow-500">Momentum</a>
+          
+            <div id="dropdown-menu" class="dropdown-menu absolute top-full left-0 max-lg:bg-gray-800 w-full flex-col gap-6 items-center py-2 text-lg font-bold lg:static lg:flex lg:flex-row lg:justify-between hidden">
+              <ul class="flex flex-col items-center gap-8 lg:flex-row lg:gap-10 text-gray-400">
+                
+                <li class="relative group">
+                  <a href="#" class="hover:text-yellow-500 font-bold">Services</a>
+                  <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                    <ul class="py-1">
+                      <li><a href="lighting.html" class="block px-4 py-2 hover:text-white">Lighting</a></li>
+                      <li><a href="audio.html" class="block px-4 py-2 hover:text-white">Audio</a></li>
+                      <li><a href="video.html" class="block px-4 py-2 hover:text-white">Video</a></li>
+                      <li><a href="fabrication.html" class="block px-4 py-2 hover:text-white">Fabrication</a></li>
+                      <li><a href="staging.html" class="block px-4 py-2 hover:text-white">Staging</a></li>
+                    </ul>
+                  </div>
+                </li>
+          
+                <li class="relative group">
+                    <a href="#" class="hover:text-yellow-500 font-bold">Work</a>
+                  <div class="hidden absolute bg-black text-yellow-500 z-10 list-none divide-y rounded shadow my-2 w-44 group-hover:block">
+                      <ul class="py-1">
+                        <li><a href="corporate.html" class="block px-4 py-2 hover:text-white">Corporate</a></li>
+                        <li><a href="entertainment.html" class="block px-4 py-2 hover:text-white">Entertainment</a></li>
+                        <li><a href="gallery.html" class="block px-4 py-2 hover:text-white">Gallery</a></li>
+                        <li><a href="caseStudies.html" class="block px-4 py-2 hover:text-white">Case Studies</a></li>
+                      </ul>
+                    </div>
+                </li>
+
+                <li class="hover:text-yellow-500"><a href="location.html">Location</a></li>
+                <li class="hover:text-yellow-500"><a href="blog.html">Blog</a></li>
+                <li class="hover:text-yellow-500"><a href="aboutUs.html">About Us</a></li>
+                <li class="hover:text-yellow-500"><a href="contact.html">Contact</a></li>
+              </ul>
+          
+              <div class="flex flex-col mt-3 gap-6 lg:flex-row lg:gap-8 w-fit mx-auto items-center">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-1 px-4 rounded-lg mb-1"><a href="login.html">Login</a></button>
+              </div>
+            </div>
+          
+
+            <div id="toggle-button" class="lg:hidden">
+              <i class="fa-solid fa-bars fa-lg text-gray-400"></i>
+            </div>
+          </nav>       
+    </header>
+
+    <div class="main-section ">
+      <div class="text-center py-8 text-white bg-gray-800 px-4 lg:px-16">
+          <h1 class="text-5xl font-bold mb-4 underline decoration-yellow-500 underline-offset-8">Entertainment Event</h1>
+          <h4 class="text-lg mb-8 max-w-2xl mx-auto">
+            Momentum’s roots are in lighting nightclubs and dance parties at some of the hottest clubs in the Meatpacking District. Entertainment events are therefore near and dear to our heart at Oxygen. From dance parties to concerts and even social events, Oxygen uses the latest in technology to bring energy to your party.
+          </h4>
+      </div>
+  
+      <!-- Swiper Container -->
+      <div class="swiper relative h-96">
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                  <img src="/img/6.jpg" alt="Image 6" class="w-full h-full object-cover">
+              </div>
+              <div class="swiper-slide">
+                  <img src="/img/7.jpg" alt="Image 7" class="w-full h-full object-cover">
+              </div>
+              <div class="swiper-slide">
+                  <img src="/img/8.jpg" alt="Image 8" class="w-full h-full object-cover">
+              </div>
+              <div class="swiper-slide">
+                  <img src="/img/9.jpg" alt="Image 9" class="w-full h-full object-cover">
+              </div>
+              <div class="swiper-slide">
+                  <img src="/img/10.jpg" alt="Image 10" class="w-full h-full object-cover">
+              </div>
+          </div>
+  
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+  
+          <!-- Add Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </div>
+  
+      <!-- Text Content -->
+      <div class="px-4 py-8">
+          <section class="mb-8 container mx-auto">
+              <h2 class="text-3xl font-bold text-black mb-4 underline decoration-yellow-500 underline-offset-8">Dance Parties</h2>
+              <p class="mb-4">
+                  If you’ve ever been to a dance party in New York City in the past four years, you are sure to have seen the Oxygen logo. From Cityfox and SHADE to DAYBREAKER, Oxygen has been producing jaw-dropping lightshows, spectacular video displays, and unparalleled sound for dance parties throughout New York City. DJs such as Sasha, Dixon, Adriatique, and Danny Tenaglia, amongst many others, have all been impressed by the world-class show Oxygen puts on in the wildest of locations.
+              </p>
+              <p>
+                  Oxygen comes in and does it all: the sound, the lighting, the video, the staging, the power distribution, etc. leaving the party promoter free to handle all the other elements in putting a dance together. Whether the party is in an abandoned cathedral or warehouse, we make it work to create a party everyone is talking about for weeks to come.
+              </p>
+          </section>
+  
+          <section class="mb-8 container mx-auto">
+              <h2 class="text-3xl font-bold text-black mb-4 underline decoration-yellow-500 underline-offset-8">Concerts</h2>
+              <p class="mb-4">
+                  At Momentum, we always pride ourselves on having the best gear in town and feel that it is one of our competitive advantages. However, when it comes to concerts, our big advantage is having a team of award-winning technicians, many with over 20 years of experience putting on large and small scale shows. These technicians can set up impeccable light and sound for a single pianist performance to a rock concert. This is what sets us apart as a concert production company in New York City, and it’s how we’ll make sure your concert is an entertainment event to remember.
+              </p>
+              <p class="mb-4">
+                  Many sound companies are experienced with recorded music but lack the experience to deal with live music, with all the challenges that this type of performance can bring. When live music is an element of an event, it is important to work with a company like Oxygen, who can seamlessly switch between different elements, ensuring a smooth transition.
+              </p>
+              <p>
+                  Coordinating sound, lighting, and video with one company is why Oxygen is trusted as a concert production company in New York City.
+              </p>
+          </section>
+  
+          <section class="mb-8 container mx-auto">
+              <h2 class="text-3xl font-bold text-black mb-4 underline decoration-yellow-500 underline-offset-8">Social Events</h2>
+              <p class="mb-4">
+                  Whether we are working with seasoned event planners or do-it-yourself brides, grooms, or parents, the Oxygen creative technical team listens to your ideas, considering any restrictions in budget or infrastructure, and presents options within your price range.
+              </p>
+              <p class="mb-4">
+                  Momentum is well-known for creating amazing transformations, especially in unconventional spaces. We handle event lighting, sound, video, and atmospherics, providing the power distribution and generation to make it all work. From a wedding reception in a boatyard to a bar mitzvah in an aircraft hangar, Oxygen can bring your unique location to life.
+              </p>
+              <p>
+                  Details matter on important days, and we bring in the best, latest sound, lighting, video, and staging equipment, which we meticulously maintain. This is in contrast to many event DJs, who often bring outdated and poorly maintained equipment. Oxygen ensures everything runs smoothly, making your event truly unforgettable.
+              </p>
+          </section>
+  
+          <section class="mb-8 container mx-auto">
+              <h2 class="text-3xl font-bold text-black mb-4 underline decoration-yellow-500 underline-offset-8">Clubs</h2>
+              <p class="mb-4">
+                  Our experience with clubs, lounges, restaurants, and bars includes building a new club from scratch or modernizing an outdated system. Oxygen can install a custom rig that is flexible and programmable to suit the mood of any crowd. Our creative technical team listens to your ideas, working within your budget to provide the perfect solution.
+              </p>
+              <p class="mb-4">
+                  During the design process, custom rigs can be fully mocked up in 3D so that you can see a photorealistic preview of what the new setup will look like. Once installed, our technicians are available for operation, instruction, and maintenance 24 hours a day.
+              </p>
+              <p>
+                  Other club services include re-programming the lighting board, reinforcing sound systems for events, renting specialized equipment, and maintaining fixtures.
+              </p>
+          </section>
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+          document.addEventListener('DOMContentLoaded', () => {
+              const swiper = new Swiper('.swiper', {
+                  loop: true,
+                  autoplay: {
+                      delay: 2500,
+                      disableOnInteraction: false,
+                  },
+                  pagination: {
+                      el: '.swiper-pagination',
+                      clickable: true,
+                  },
+                  navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                  },
+              });
+          });
+      </script>
+  </div>
+  
+
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Services Column -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-bold uppercase text-yellow-500">Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="lighting.html" class="text-gray-400 hover:text-yellow-500">Lighting</a></li>
+                    <li><a href="audio.html" class="text-gray-400 hover:text-yellow-500">Audio</a></li>
+                    <li><a href="video.html" class="text-gray-400 hover:text-yellow-500">Video</a></li>
+                    <li><a href="fabrication.html" class="text-gray-400 hover:text-yellow-500">Fabrication</a></li>
+                    <li><a href="aboutUs.html" class="text-gray-400 hover:text-yellow-500">360 Integration</a></li>
+                    <li><a href="staging.html" class="text-gray-400 hover:text-yellow-500">Staging</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- More Info Column -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-bold uppercase text-yellow-500">More Info</h3>
+                <ul class="space-y-2">
+                    <li><a href="entertainment.html" class="text-gray-400 hover:text-yellow-500">Entertainment</a></li>
+                    <li><a href="corporate.html" class="text-gray-400 hover:text-yellow-500">Corporate</a></li>
+                    <li><a href="aboutUs.html" class="text-gray-400 hover:text-yellow-500">About</a></li>
+                    <li><a href="review.html" class="text-gray-400 hover:text-yellow-500">Reviews</a></li>
+                    <li><a href="blog.html" class="text-gray-400 hover:text-yellow-500">Blog</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-yellow-500">Contact</a></li>
+                    <li><a href="caseStudies.html" class="text-gray-400 hover:text-yellow-500">Case Studies</a></li>
+                </ul>
+            </div>
+
+            <!-- Connect & Social Media Column -->
+            <div class="space-y-6">
+                <!-- Connect Section -->
+                <div>
+                    <h3 class="text-lg font-bold uppercase text-yellow-500">Connect</h3>
+                    <p class="text-gray-400 mb-4">Stay in the loop. Be the first to learn about our latest events.</p>
+                    <form action="#" method="POST" class="flex space-x-2">
+                        <input type="text" placeholder="Enter email" class="flex-grow px-4 py-2 bg-gray-800 border border-gray-700 focus:border-yellow-500 text-gray-400">
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Social Media Section -->
+                <div>
+                    <h3 class="text-lg font-bold uppercase text-yellow-500">Social Media</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-x"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 hover:scale-110"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500">
+            <p>All Content © 2024 by Momentum Eventworks.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
