@@ -146,5 +146,5 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 For any queries or support, please contact:
 
-- Email: info@momentumeventworks.com
-- Phone: (011) 255-2542
+- Email: 
+- Phone: 
