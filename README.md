@@ -134,7 +134,7 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Vinoth - Initial work
 
 ## 🙏 Acknowledgments
 
